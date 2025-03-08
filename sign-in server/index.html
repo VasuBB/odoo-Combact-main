@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animated Login and Registration Form with Gradient </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="form-wrapper sign-up">
+            <form action="">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="sign-link">
+                    <p>Already have an account? <a href="#" class="signIn-link">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-wrapper sign-in">
+            <form method="POST" action="">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <label>Account Type:</label>
+                <div class="radio-group">
+                    <input type="radio" id="account-type-1" name="account_type" value="admin">
+                    <label for="account-type-1">Admin</label>
+                    <input type="radio" id="account-type-2" name="account_type" value="student" checked>
+                    <label for="account-type-2">Student</label>
+                    <input type="radio" id="account-type-3" name="account_type" value="teacher">
+                    <label for="account-type-3">Teacher</label>
+                    <input type="radio" id="account-type-4" name="account_type" value="parent">
+                    <label for="account-type-3">Parent</label>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
